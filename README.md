@@ -32,6 +32,30 @@ python -m venv venv
 # Install required libraries
 pip install -r requirements.txt
 ```
+### 2. Execute Pipeline
+The SANKET framework is executed as a multi-stage pipeline. Each stage must be run in the following sequence from the project root to maintain data integrity.
+
+#### **Stage 1: Neural Pattern Learning (The Brain)**
+Train the **CTGAN** model on baseline financial logic to understand "normal" transaction behavior.
+```bash
+python core/data_engine.py
+```
+#### **Stage 2: Adversarial Chaos Injection (The Stress)**
+Synthesize 10,000+ high-fidelity transactions while injecting latency spikes and logic-based "traps".
+```bash
+python core/stress_generator.py
+```
+#### **Stage 3: Satellite Topography Visualization (The Map)**
+Launch the interactive **Streamlit** dashboard to visualize the Digital Twin's service health nodes.
+```bash
+streamlit run dashboard/monitor_app.py
+```
+#### **Stage 4: Resilience & ESG Harvest (The Audit)**
+Generate the final executive report summarizing system breaking points and **Carbon Risk** impact.
+```bash
+python analytics/audit_report.py
+```
+
 ## 📈 Impact & Results
 
 The **SANKET Digital Twin** provided the following high-fidelity insights during the adversarial stress-test simulation:
