@@ -59,7 +59,29 @@ python analytics/audit_report.py
 ## 📈 Impact & Results
 
 The **SANKET Digital Twin** provided the following high-fidelity insights during the adversarial stress-test simulation:
+```plaintext
+============================================================
+SANKET EXECUTIVE AUDIT | 2026-02-28 22:44:31
+============================================================
 
+[VULNERABILITY ASSESSMENT]
+ ▸ Critical Bottleneck:  PAYMENT
+ ▸ Resilience Score:     91.28/100
+ ▸ Detected Leakage:     201 units
+
+[SYSTEMIC LEAKAGE DATA]
+ ▸ Stress Volume:        10000 synthetic transactions
+ ▸ Global Leakage Rate:  7.87%
+
+[ESG & CARBON RISK IMPACT]
+ ▸ Latency Inefficiency: 457 high-energy compute events
+ ▸ Risk Summary: High-latency paths (5000ms) indicate code paths
+   that increase server thermals and energy consumption.
+
+============================================================
+STATUS: AUDIT COMPLETE | SYSTEM OPTIMIZATION RECOMMENDED
+============================================================
+```
 * **Global Leakage Rate**: Identified a **7.87% failure rate** across the network topography under extreme adversarial load.
 * **Critical Bottleneck**: Pinpointed the **PAYMENT** node as the primary system vulnerability with a **91.28% resilience score**.
 * **ESG & Carbon Risk**: Flagged **457 high-energy compute events**, identifying high-latency paths (5000ms) that require architectural optimization to reduce the system's digital carbon footprint.
